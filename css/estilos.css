@@ -61,3 +61,17 @@ ul{
 .parrafo{
     margin: 24px 0px;
 }
+#caja{
+    width: 256px;
+    height: 256px;
+    background-color: #969696;
+    border-radius: 8px;
+    margin: 32px 16px;
+    padding: 32px;
+    color:hsl(264, 16%, 10%);
+    font-size: 24px;
+}
+.mt{
+    margin-top: 32px;
+    display: inline-block;
+}
