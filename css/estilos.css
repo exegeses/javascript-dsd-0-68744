@@ -75,3 +75,25 @@ ul{
     margin-top: 32px;
     display: inline-block;
 }
+
+#rotador{
+    width: 75%;
+    background-color: hsl(264, 16%, 40%);
+    color: hsl(267, 72%, 90%);
+    border-radius: 12px ;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    #rotador img{
+        filter: invert();
+        cursor: pointer;
+        transition: 500ms;
+    }
+    #rotador img:hover{
+        transform: scale(1.2);
+    }
+    #rotador span{
+        font-size: 32px;
+    }
