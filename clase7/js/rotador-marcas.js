@@ -11,6 +11,7 @@ const marcas = [
     'Aeropostale','Tommy', 'Hollister', 
     'Kingpin', 'Gola', 'Old Navy'
    ];
+const largo = marcas.length;
 
 /* estado inicial */
 let llave = 2;
@@ -21,8 +22,19 @@ btnSiguiente.addEventListener(
         function()
         {
             llave++; // llave = llave + 1
-            if( llave == 9 ){
+            if( llave == largo ){
                 llave = 0
+            }
+            span.innerText = marcas[ llave ];
+        }
+);
+btnAnterior.addEventListener(
+        'click',
+        function()
+        {
+            llave--;
+            if( llave < 0 ){
+                llave = largo -1;
             }
             span.innerText = marcas[ llave ];
         }

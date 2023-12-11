@@ -97,3 +97,20 @@ ul{
     #rotador span{
         font-size: 32px;
     }
+
+#lista li{
+    font-size: 24px;
+    list-style-type: none;
+    margin: 4px;
+    transition: 500ms;
+}
+    #lista li::before{
+        content: url('../clase8/imgs/ice-cream.png');
+        margin-right: 16px;
+        position: relative;
+        top: 4px;
+    }
+    #lista li:hover{
+        font-size: 30px;
+        background-color: hsl(264, 16%, 24%);
+    }
