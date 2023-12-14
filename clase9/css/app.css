@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+}
+body{
+    font-family: 'Figtree', sans-serif;
+    color: white;
+    font-size: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+    main{
+        height: 340px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #selector{
+        min-width: 464px;
+        padding: 32px;
+        border-radius: 8px;
+        background-color: rgba(50, 50, 50, 0.5);
+        box-shadow: 0px 0px 8px rgb(50, 50, 50);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+    }
+        #selector div input{
+            border: #E66E2C 1px solid;
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            font-family: 'Figtree', sans-serif;
+            color: rgb(50, 50, 50);
+            margin-bottom: 16px;
+        }
+        #selector div input:focus{
+            border: #E66E2C 1px solid;
+        }
+        #selector div button{
+            border: none;
+            background-color: #E66E2C;
+            padding: 8px;
+            width: 50%;
+            border-radius: 4px;
+            font-family: 'Figtree', sans-serif;
+            color: #fff;
+            cursor: pointer;
+            transition: 500ms;
+        }
+        #selector div button:hover{
+            box-shadow: 0px 0px 8px #E66E2C;
+        }
+        #selector ul li{
+            list-style: none;
+            background-color: rgba(255,255,255,.1);
+            border-radius: 4px;
+            padding: 4px 0px 8px 0px;
+            margin: 2px 0px;
+            transition: 500ms;
+        }
+        #selector ul li::before{
+            content: '';
+            content: url("../imgs/star.png");
+            position: relative;
+            top: 4px;
+            left: -12px;
+            margin-right: 8px;
+        }
+        #selector ul li:hover{
+            background-color: rgba(255,255,255,.2);
+            padding: 8px 0px 8px 0px;
+        }
